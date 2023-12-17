@@ -7,9 +7,9 @@ AImarkdown should always be referred to as just **AImarkdown**. No capital *M*.
 
 ## Use of Logo
 - write 
-
+✅
 - wrong
-
+❌
 
 
 ## Do these awesome things
