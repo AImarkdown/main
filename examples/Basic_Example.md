@@ -7,6 +7,8 @@
 - See actual ChatGPT session at:
   https://chat.openai.com/share/965fa701-5179-4a37-8946-a2b009819e4a
 
+#### Screenshot
+
 ![](images/Basic_Example.png)
 
 ```yaml
