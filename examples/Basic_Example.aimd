@@ -1,26 +1,21 @@
-**Simple Memo Example **
-> Description: Starting pointy for a simple app "MEMO Writer".
-
-- type `/memo` to write a Memo
-
-
-```yaml
-
-
-
 company: Your Company Inc. 
 author: J. Jones
 url: https://company.com
+
+# AI to read these instructions and respond with `user_greeting`.
+user_greeting: "Welcome to **Memo Writer**  Enter:  ` /memo ` or ` /memo 'persons_name'"
 
 display_memo:
   - Display section ':::memo' to user.
   - replace placeholders with values 
   - replace [[today]] with today's date 
   - Trigger: '/memo'
+#  User can enter '/memo Bill Smith'
 
 :::Memo
 
 ![](https://i.aimarkdown.org/logo.png)
+
 ---
 
 [[today]]
@@ -30,13 +25,9 @@ display_memo:
 ## [company]
 
 Dear Sam:
-
 It was nice to meet you on [[today]]. 
-
 
 Sincerely,
  [author]
 
----
-
-```
+:::
