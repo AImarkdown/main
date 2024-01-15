@@ -11,7 +11,7 @@
 
 #### Screenshot
 
-![](images/Basic_Example.png)
+![](images/Example_1_Basic.png)
 
 ```yaml
 
