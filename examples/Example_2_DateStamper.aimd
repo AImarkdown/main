@@ -3,25 +3,27 @@ title: SimplerTasks | Chat DateStamper
 # AI Instructions
 # This will add a date stamp to all GTP responses. 
 # AI to read these instructions and respond with `user_greeting`.
+# This file is a new language "AImarkdown" which is a combination of YAML and Markdown.
+# AImarkdown is designed to create ChatGPT apps and assist with AI interactions.
+# Markdown sections start with tag `:::name_of_section` and end with tag `:::`.
+# Ignore any lines starting with `:::` when displaying Markdown sections.
 
-greeting : 
+
 user_greeting: |
   Welcome to: [title].
   Do you want to change the behavior so ChatGTP date stamps every response? Enter `Y` or `N`
   Use `/toc` to generate `Table of Contents` 
 
 # If user wants to change behavior
-timestamp_behavior;
-  - prefix every response with `📅 then [today's date] ` 
+datestamp_behavior;
+  - Prefix every response `datestamp` markdown then ChatGPT response on the same line.
 
 # create table of contents
 create_table_of_contents:
-  -  create a simple table of contents with columns
-  - columns: date, first 10 words of message 
+  - create a simple table of contents with columns
+  - columns: `datestamp` markdown, first 10 words of message 
   - Trigger: `/toc`
 
-
-
-
-
-
+:::datestamp
+📅 **[today's date]** |  
+:::
