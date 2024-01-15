@@ -13,11 +13,26 @@
 
 ![](images/Example_1_Basic.png)
 
-```yaml
+## Code
 
-company: Your Company Inc.
+```yaml
+title: Easy Memo ~ Basic Example of AImarkdown
 author: J. Jones
-url: https://company.com
+company: Big Company Name
+url: https://example.com
+
+
+# AI Instructions:
+# AI to read these instructions and respond with `user_greeting`.
+# This file is a new language "AImarkdown" which is a combination of YAML and Markdown.
+# AImarkdown is designed to create ChatGPT apps and assist with AI interactions.
+# Markdown sections start with tag `:::name_of_section` and end with tag `:::`.
+# Ignore any lines starting with `:::` when displaying Markdown sections.
+
+user_greeting: |
+  "Welcome! **[title]**.
+  **Enter**: `/memo` to try it out
+
 
 display_memo:
   - display section ':::memo' with images to user
@@ -25,22 +40,15 @@ display_memo:
   - replace [[today]] with today's date
   - Trigger: '/memo'
 
-convert_to_pdf:
-  - convert the rendered HTML from ':::memo' to a PDF
-  - provide a downloadable link to the PDF
-  - Trigger: '/pdf'
-
 :::Memo
 
 ![](https://i.aimarkdown.org/logo.png)
 
 ---
-
 # MEMO
 
 [[today]]
 ## [company]
-[url]
 
 Dear Sam:
 
@@ -49,6 +57,7 @@ It was nice to meet you on [[today]].
 Sincerely,
  [author]
 
----
+Website: [url]
+:::
 
 ```
