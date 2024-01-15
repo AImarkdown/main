@@ -5,16 +5,15 @@
 - type `/memo` to write a Memo
 
 - See actual ChatGPT session at:
-  https://chat.openai.com/share/965fa701-5179-4a37-8946-a2b009819e4a
+  https://chat.openai.com/share/ddbc36b9-ed40-4944-8291-71183dc5c914
 
-#### Screenshot
+### Screenshot
 
 ![](images/Example_1_Basic.png)
 
-## Code
+### Code
 
-```yaml
-title: Easy Memo ~ Basic Example of AImarkdown
+```yamltitle: Easy Memo ~ Basic Example of AImarkdown
 author: J. Jones
 company: Big Company Name
 url: https://example.com
@@ -28,12 +27,15 @@ url: https://example.com
 # Ignore any lines starting with `:::` when displaying Markdown sections.
 
 user_greeting: |
-  "Welcome! **[title]**.
-  **Enter**: `/memo` to try it out
+  Welcome to: [title].
+  Enter: `/memo` to try it out
+  or
+  Enter: `/memo  what_you_want_in_the_memo`
 
 
 display_memo:
-  - display section ':::memo' with images to user
+  - display section ':::memo'  to user
+  - display images in `[alt text](image_url)` Markdown syntax
   - replace placeholders with values
   - replace [[today]] with today's date
   - Trigger: '/memo'
@@ -56,6 +58,7 @@ Sincerely,
  [author]
 
 Website: [url]
+
 :::
 
 ```
