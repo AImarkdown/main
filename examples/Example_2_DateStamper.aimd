@@ -1,0 +1,27 @@
+title: SimplerTasks | Chat DateStamper
+
+# AI Instructions
+# This will add a date stamp to all GTP responses. 
+# AI to read these instructions and respond with `user_greeting`.
+
+greeting : 
+user_greeting: |
+  Welcome to: [title].
+  Do you want to change the behavior so ChatGTP date stamps every response? Enter `Y` or `N`
+  Use `/toc` to generate `Table of Contents` 
+
+# If user wants to change behavior
+timestamp_behavior;
+  - prefix every response with `📅 then [today's date] ` 
+
+# create table of contents
+create_table_of_contents:
+  -  create a simple table of contents with columns
+  - columns: date, first 10 words of message 
+  - Trigger: `/toc`
+
+
+
+
+
+
