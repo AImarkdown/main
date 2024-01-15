@@ -1,10 +1,8 @@
 ## Simple Memo Example
 
-> Description: Start of a basic `Memo Writer` app
+> Description: Start of a basic `Easy Memo` app
 
 - type `/memo` to write a Memo
-
-- Code:
 
 - See actual ChatGPT session at:
   https://chat.openai.com/share/965fa701-5179-4a37-8946-a2b009819e4a

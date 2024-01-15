@@ -12,12 +12,15 @@ url: https://example.com
 # Ignore any lines starting with `:::` when displaying Markdown sections.
 
 user_greeting: |
-  "Welcome! **[title]**.
-  **Enter**: `/memo` to try it out
+  Welcome to: [title].
+  Enter: `/memo` to try it out
+  or 
+  Enter: `/memo  what_you_want_in_the_memo`
 
 
 display_memo:
-  - display section ':::memo' with images to user
+  - display section ':::memo'  to user
+  - display images in `[alt text](image_url)` Markdown syntax
   - replace placeholders with values
   - replace [[today]] with today's date
   - Trigger: '/memo'
@@ -40,4 +43,5 @@ Sincerely,
  [author]
 
 Website: [url]
+
 :::
