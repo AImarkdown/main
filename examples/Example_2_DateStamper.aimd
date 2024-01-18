@@ -30,7 +30,7 @@ user_greeting: |
 datestamp_behavior:
   - Prefix every response with `datestamp` Markdown, then add ChatGPT response on the same line.
 
-# Create table of contents as a list of each
+# Create table of contents as a list of responses
   - list_item: First 22 words of ChatGPT response including date stamp that was prepended, then `…`
   - Trigger: `/toc`
 
