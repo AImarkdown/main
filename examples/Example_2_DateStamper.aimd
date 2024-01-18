@@ -3,7 +3,7 @@ version: 0.6
 calendar_icon: 📅
 
 # AI Instructions:
-# Overview: Change ChatGPT behavior to add a date stamp to all GTP responses.
+# Overview: Change ChatGPT behavior to add a date stamp to all GTP responses and generate a Table of Contents.
 # - AImarkdown is a combination of YAML and Markdown.
 # - Upon starting a session, display only the `user_greeting` message as it is.
 # - Do not add any elaboration or additional content to the `user_greeting` message.
@@ -23,16 +23,15 @@ calendar_icon: 📅
 # Welcome users with only `user_greeting` message at session start.
 user_greeting: |
   Welcome to: [title].
-  All ChatGPT responses will be date stamped.
+  All ChatGPT responses from now on will be date stamped.
   Use `/toc` to generate `Table of Contents` of all responses.
 
-# - Implement a date stamp system that captures the actual date of each ChatGPT response.
-datestamp_behavior;
+# - Implement a date stamp that captures the today's date to each ChatGPT response.
+datestamp_behavior:
   - Prefix every response with `datestamp` Markdown, then add ChatGPT response on the same line.
 
-# Create table of contents  datestamp and truncated response
-  - Create a simple table of contents with columns.
-  - columns: first 20 words of ChatGPT response including `calendar_icon` and date stamp, then `… `
+# Create table of contents as a list of each
+  - list_item: First 22 words of ChatGPT response including date stamp that was prepended, then `…`
   - Trigger: `/toc`
 
 # Contains dynamic_placeholder for today's date.
