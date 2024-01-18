@@ -1,5 +1,6 @@
 title: SimplerTasks | Chat DateStamper
 version: 0.6
+calendar_icon: 📅
 
 # AI Instructions:
 # Overview: Change ChatGPT behavior to add a date stamp to all GTP responses.
@@ -16,27 +17,25 @@ version: 0.6
 #   1. static_placeholder `[...]` 
 #   2. dynamic_placeholder `[[...]]` 
 #   3. executable_placeholder `[[[...]]]`
-# For more information on AImarkdown: https://aimarkdown.org
+# For more information on AImarkdown: https://aimarkdown.org.
 
 
 # Welcome users with only `user_greeting` message at session start.
 user_greeting: |
   Welcome to: [title].
-  Do you want to change the behavior so ChatGTP date stamps every response? Enter `Y` or `N`
-  Use `/toc` to generate `Table of Contents` 
+  All ChatGPT responses will be date stamped.
+  Use `/toc` to generate `Table of Contents` of all responses.
 
-# If user wants to change behavior to date stamp every response
+# - Implement a date stamp system that captures the actual date of each ChatGPT response.
 datestamp_behavior;
   - Prefix every response with `datestamp` Markdown, then add ChatGPT response on the same line.
 
-# create table of contents with the actual dates of the ChatGPT responses, not today's date
-create_table_of_contents:
-  - create a simple table of contents with columns
-  - columns: date of chat responses, first 12 words of ChatGPT response 
+# Create table of contents  datestamp and truncated response
+  - Create a simple table of contents with columns.
+  - columns: first 20 words of ChatGPT response including `calendar_icon` and date stamp, then `… `
   - Trigger: `/toc`
 
-# contains dynamic_placeholder for today's date
+# Contains dynamic_placeholder for today's date.
 :::datestamp
-📅 **[[today]]** |  
+[calendar_icon] **[[today]]** |  
 :::
-
