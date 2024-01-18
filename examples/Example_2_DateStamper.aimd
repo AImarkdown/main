@@ -1,29 +1,42 @@
 title: SimplerTasks | Chat DateStamper
+version: 0.6
 
-# AI Instructions
-# This will add a date stamp to all GTP responses. 
-# AI to read these instructions and respond with `user_greeting`.
-# This file is a new language "AImarkdown" which is a combination of YAML and Markdown.
-# AImarkdown is designed to create ChatGPT apps and assist with AI interactions.
-# Markdown sections start with tag `:::name_of_section` and end with tag `:::`.
-# Ignore any lines starting with `:::` when displaying Markdown sections.
+# AI Instructions:
+# Overview: Change ChatGPT behavior to add a date stamp to all GTP responses.
+# - AImarkdown is a combination of YAML and Markdown.
+# - Upon starting a session, display only the `user_greeting` message as it is.
+# - Do not add any elaboration or additional content to the `user_greeting` message.
+# - Display Markdown sections fully, including various placeholders (static, dynamic, executable).
+# - Comments (`#`) in YAML guide AI's approach to the document.
+# - Markdown sections follow YAML; they begin with `:::name_of_section` and end with `:::`.
+# - Ignore lines starting with `:::` within Markdown sections.
+# - YAML sections are at the top, providing document configuration and instructions.
+# - Markdown sections are below YAML, for content display and interaction.
+# - Understand three placeholder types in YAML and Markdown: 
+#   1. static_placeholder `[...]` 
+#   2. dynamic_placeholder `[[...]]` 
+#   3. executable_placeholder `[[[...]]]`
+# For more information on AImarkdown: https://aimarkdown.org
 
 
+# Welcome users with only `user_greeting` message at session start.
 user_greeting: |
   Welcome to: [title].
   Do you want to change the behavior so ChatGTP date stamps every response? Enter `Y` or `N`
   Use `/toc` to generate `Table of Contents` 
 
-# If user wants to change behavior
+# If user wants to change behavior to date stamp every response
 datestamp_behavior;
-  - Prefix every response `datestamp` markdown then ChatGPT response on the same line.
+  - Prefix every response with `datestamp` Markdown, then add ChatGPT response on the same line.
 
-# create table of contents
+# create table of contents with the actual dates of the ChatGPT responses, not today's date
 create_table_of_contents:
   - create a simple table of contents with columns
-  - columns: `datestamp` markdown, first 10 words of message 
+  - columns: date of chat responses, first 12 words of ChatGPT response 
   - Trigger: `/toc`
 
+# contains dynamic_placeholder for today's date
 :::datestamp
-📅 **[today's date]** |  
+📅 **[[today]]** |  
 :::
+
