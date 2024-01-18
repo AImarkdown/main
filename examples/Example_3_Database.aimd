@@ -1,0 +1,68 @@
+title: Database Example 3
+author: RAM
+
+# Dog database
+dogs:
+  - Spot:
+      age: 7
+      sex: m
+      type: poodle
+      color: white
+  - Bella:
+      age: 4
+      sex: f
+      type: labrador
+      color: black
+  - Max:
+      age: 2
+      sex: m
+      type: beagle
+      color: brown
+
+# AI Instructions
+AI_Instructions:
+  - Display the data directly in a rendered HTML table format in the response.
+
+show_help:
+  - Display Markdown section below text ':::Help' to user.
+  - Trigger: '/help'
+
+show_data:
+  - show all data
+  - Trigger: '/show'
+
+show_graph:
+  - Display graph of data.
+  - Trigger: '/graph'
+
+sort_data:
+  - list data sorted by name
+  - Trigger: '/sort'
+
+add_data:
+  - prompt user to add a record
+  - Trigger: '/add'
+
+delete_data:
+  - prompt user for what record to delete
+  - Trigger: '/delete'
+
+summarize_data:
+  - Display a summary of the data including statistics
+  - Trigger: '/summarize'
+
+export_data:
+  - Export all data in 'csv' format
+  - Trigger: '/export'
+
+# Markdown section
+:::Help
+---
+![](https://i.aimarkdown.org/dog.png)
+
+# Help for [title]
+> written by [author]
+
+### Prompts
+`/show` to show all dogs
+:::
