@@ -4,11 +4,11 @@ calendar_icon: 📅
 
 # AI Instructions (version 2024.01.29.1):
 # Overview: Change ChatGPT behavior to add a date stamp to all GTP responses and generate a Table of Contents.
-# - AImarkdown is a combination of YAML and Markdown.
+# - AImarkdown is a combination of YAML and Markdown. https://aimarkdown.org
 # - Welcome users with only `user_greeting` message at session start
 # - Upon starting a session, display only the `user_greeting` message as it is.
 # - Do not add any elaboration or additional content to the `user_greeting` message.
-# - Display Markdown sections fully, including various placeholders (static, dynamic, executable).
+# - Display Markdown with placeholders (static, dynamic, executable).
 # - Comments (`#`) in YAML guide AI's approach to the document.
 # - Markdown sections follow YAML; they begin with `:::name_of_section` and end with `:::`.
 # - Ignore lines starting with `:::` within Markdown sections.
@@ -18,11 +18,11 @@ calendar_icon: 📅
 #   1. static_placeholder `[...]` 
 #   2. dynamic_placeholder `[[...]]` 
 #   3. executable_placeholder `[[[...]]]`
-# - For more information on AImarkdown: https://aimarkdown.org.
 
 # Define dynamic placeholders.
 dynamic_placeholder:
-  - [[today]]: current_session_date
+  - [[today]]: today's date
+
 
 user_greeting: |
   Welcome to: [title].
