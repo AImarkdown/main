@@ -18,7 +18,7 @@ calendar_icon: 📅
 #   1. static_placeholder `[...]` 
 #   2. dynamic_placeholder `[[...]]` 
 #   3. executable_placeholder `[[[...]]]`
-# For more information on AImarkdown: https://aimarkdown.org.
+# - For more information on AImarkdown: https://aimarkdown.org.
 
 # Define dynamic placeholders.
 dynamic_placeholder:
