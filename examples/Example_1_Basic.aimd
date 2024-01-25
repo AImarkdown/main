@@ -33,10 +33,12 @@ url: https://example.com
 
 # Welcome user with greeting.
 aimd.greeting: |
-  Welcome to: [title].
-  Enter: `/memo` to try it out
-  or 
-  Enter: `/memo  what_you_want_in_the_memo`
+Welcome to: [title].
+Enter: `/memo` to try it out
+or 
+Enter: `/memo  what_you_want_in_the_memo`
+You can ask ChatGPT to improve the memo by saying things like:
+"*Can you improve that paragraph and add it to the memo?*"
 
 # Display memo instructions.
 display_memo:
