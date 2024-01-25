@@ -1,11 +1,9 @@
 title: Database Example 3
 author: RAM
 
-
-
 # AI To Follow These Instructions and Guidance  (version 2024.01.20.1):
 
-# Overview:  Example of simple database  using AImarkdown 
+# Overview:  Example of simple database using AImarkdown 
 
 # Document Structure:
 # - AImarkdown language is a combination of YAML and Markdown. https://aimarkdown.org
@@ -22,13 +20,12 @@ author: RAM
 #   2. dynamic_placeholder `[[...]]` 
 #   3. executable_placeholder `[[[...]]]`
 
-# YAML Instructions:
+# AI Instructions and Guidance:
 # - Comments (`#`) in YAML guide AI's approach to the document.
 
 # Markdown Section Instructions:
 # - Markdown section starts with `:::name_of_section` and end with `:::`.
 # - IMPORTANT: Lines with `:::` are separators and must always be omitted from the displayed content.
-
 
 # Display welcome message to user with help and database
 user_greeting:
