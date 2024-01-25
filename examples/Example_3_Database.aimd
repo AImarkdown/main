@@ -26,12 +26,11 @@ author: RAM
 # - Comments (`#`) in YAML guide AI's approach to the document.
 
 # Markdown Section Instructions:
-# - Markdown start with `:::name_of_section` and end with `:::`.
-# - IMPORTANT: Lines with `:::` are separators and must be omitted from the displayed content.
+# - Markdown section starts with `:::name_of_section` and end with `:::`.
+# - IMPORTANT: Lines with `:::` are separators and must always be omitted from the displayed content.
 
 
-# Display welcome message to user
-# Include  Markdown section 'Help' .
+# Display welcome message to user with help and database
 user_greeting:
   - Display Welcome to: [title].
   - Display `show_help`.
