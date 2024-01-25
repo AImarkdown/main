@@ -37,6 +37,9 @@ Welcome to: [title].
 Enter: `/memo` to try it out
 or 
 Enter: `/memo  what_you_want_in_the_memo`
+or
+Enter: `/memo To: Jimmy Bean Body: I look forward to our meeting in Toronto, On, Canada. See you there!`
+> Note:
 You can ask ChatGPT to improve the memo by saying things like:
 "*Can you improve that paragraph and add it to the memo?*"
 
