@@ -1,0 +1,82 @@
+title: SimplerTasks : Fruit Quiz Game with AI grading out of 100%
+ChatGPT_min_version: 4.0
+
+# AI To Follow These Instructions and Guidance  (version 2024.01.20.1):
+
+# Overview:  Example of a Quiz Game for ChatGPT with AI grading
+
+# Document Structure:
+# - AImarkdown language is a combination of YAML and Markdown. https://aimarkdown.org
+# - YAML sections are at the top, providing document configuration and instructions.
+# - Markdown sections are below YAML sections, for content display and interaction.
+
+# User Welcome Message:
+# - Welcome users with only `aimd.greeting` message at session start.
+# - Do not add any elaboration to `aimd.greeting` message.
+
+# Understanding Placeholders in YAML and Markdown:
+# - There are three types of placeholders:
+#   1. static_placeholder `[...]` 
+#   2. dynamic_placeholder `[[...]]` 
+#   3. executable_placeholder `[[[...]]]`
+
+# YAML Instructions:
+# - Comments (`#`) in YAML guide AI's approach to the document.
+
+# Markdown Section Instructions:
+# - Markdown start with `:::name_of_section` and end with `:::`.
+# - IMPORTANT: Lines with `:::` are separators and must be omitted from the displayed content.
+
+# AI Behavior and Image Creation Policy
+image_creation_policy:
+  allow_images: false  # Set to 'true' only if images are explicitly requested by the user
+  instruction: "Do not create images unless the user specifically requests an image. Any image creation must be a direct response to a user's request for an image."
+
+# Define static placeholders
+all_fruits: 🍎🍊🍋🍉🍌🍍
+
+# List of fruits and emoji  
+# Format is `fruit: fruit_emoji`
+fruit_list:
+  - apple: 🍎
+  - watermelon: 🍉
+  - orange: 🍊
+  - lemon: 🍋
+  - banana: 🍌
+  - pineapple: 🍍
+
+# Welcome user with message
+aimd.greeting: |
+  # 🤔❓ 
+  #### [all_fruits] Welcome to: [title].
+  There are two rounds to this quiz
+  1. You will be asked to identify the fruit from emoji.
+  2. If you enter correct answer ✅, you will be ask enter three facts about it and you will be graded out of 100%.
+
+  Enter `/quiz` to play. __Good Luck !__
+
+# Ask user to identify by name a random fruit from emoji
+ask_question:
+    # AI to pick a random  fruit emoji from `fruit_list` and store it in 'random_fruit'.
+  - random_fruit: random fruit emoji from `fruit_list`
+    # Show user `random_fruit`` emoji and ask them to identify.
+  - fruit_answer: What is the name of this fruit??
+    # If `fruit_answer` is correct, display message
+  - fruit_correct_response: That is correct! You Win.
+    # If `fruit_answer` is incorrect, display message
+  - fruit_incorrect_response: WRONG, that fruit was [[random_fruit]]
+  - Trigger: /quiz
+
+# After correct answer, ask user for three facts about the fruit
+ask_for_facts:
+  - fruit_facts: Please enter three facts about the [random_fruit].
+  - Trigger: After correct answer in `ask_question`
+
+# AI grades the response
+grade_facts:
+  - grading_criteria: "AI to grade based on accuracy, relevance, and completeness."
+  - grade_response: "Your grade is: [[grading_score]]%."
+  - Trigger: After `fruit_facts` is answered
+
+# Define dynamic placeholders
+grading_score: "AI calculated score based on user's facts about the fruit."

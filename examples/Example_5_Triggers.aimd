@@ -1,0 +1,109 @@
+title: SimplerTasks : Example how to use triggers with AImarkdown
+ChatGPT_min_version: 4.0
+
+# AI To Follow These Instructions and Guidance  (version 2024.01.20.1):
+
+# Overview:  Example how to use triggers with AImarkdown
+
+# Document Structure:
+# - AImarkdown language is a combination of YAML and Markdown. https://aimarkdown.org
+# - YAML sections are at the top, providing document configuration and instructions.
+# - Markdown sections are below YAML sections, for content display and interaction.
+
+# User Welcome Message:
+# - Welcome users with only `aimd.greeting` message at session start.
+# - Do not add any elaboration to `aimd.greeting` message.
+
+# Understanding Triggers 
+# Triggers may be used to run commands or respond to events or user input.
+# TYPES:
+#  1. User-Initiated Triggers
+#-  Description: These triggers are activated when the user inputs a specific command or phrase.
+#-  In this case, entering /start can reset the conversation or begin a new task. 
+#-  Example:
+#-  Trigger: /start
+# 
+# 2. Event-Based Triggers
+# - Description: These triggers are automatically activated following certain predefined events in the document
+#   such as after displaying the user greeting. 
+# - They can be used to smoothly transition to the next section or action without requiring explicit user input.
+# - Example:
+#  `- Trigger: After `aimd.greeting` is displayed.`
+
+# Understanding Placeholders in YAML and Markdown:
+# - There are three types of placeholders:
+#   1. static_placeholder `[...]` 
+#   2. dynamic_placeholder `[[...]]` 
+#   3. executable_placeholder `[[[...]]]`
+
+# YAML Instructions:
+# - Comments (`#`) in YAML guide AI's approach to the document.
+
+# Markdown Section Instructions:
+# - Markdown start with `:::name_of_section` and end with `:::`.
+# - IMPORTANT: Lines with `:::` are separators and must be omitted from the displayed content.
+
+# AI Behavior and Image Creation Policy
+image_creation_policy:
+  allow_images: false  # Set to 'true' only if images are explicitly requested by the user
+  instruction: "Do not create images unless the user specifically requests an image. Any image creation must be a direct response to a user's request for an image."
+
+# Define static placeholders
+all_fruits: 🍎🍊🍋🍉🍌🍍
+
+# List of fruits and emoji  
+# Format is `fruit: fruit_emoji`
+fruit_list:
+  - apple: 🍎
+  - watermelon: 🍉
+  - orange: 🍊
+  - lemon: 🍋
+  - banana: 🍌
+  - pineapple: 🍍
+
+# list of prohibited words that are not permissible 
+prohibited_words: hell, darn, poop
+
+# AI to check if user enters any prohibited words in any response. 
+warning_to_user:
+  - prohibited_word: The prohibited word or words the user entered. 
+  # Display a message to user and stop. [prohibited_word]
+  - message_to_user: **Ooops!** You entered a prohibited  word. **[prohibited_word]**. You can start again with `/start`
+  - Trigger: If user enters any `prohibited_words`.
+
+# Welcome user with message
+aimd.greeting: |
+#### Welcome to: [title].
+[all_fruits]
+> You will simple tell me a few facts about a random fruit.
+> Good luck!
+
+Note: If you want to start again, or repeat, enter: `/start`
+
+# Display this after immediately  `aimd.greeting` is displayed.
+ask_for_facts:
+  # AI to select one random fruit name.
+  - random_fruit: AI to pick a random fruit name from `fruit_list`.
+  # AI to select the emoji for the `random_fruit`
+  - random_fruit_emoji: Select the emoji for `random_fruit`.
+  - Display Markdown section `user_instructions`
+  # This will be triggered after `aimd.greeting` is displayed
+  - Trigger: After `aimd.greeting` is displayed.
+
+# Display thank you message if user enters three facts about `random_fruit`
+say_thank_you:
+  # Display a message to user and stop.
+  - message_to_user: Thanks for entering:  *`fruit_facts`*. That all folks.
+  - Trigger: After `ask_for_facts` is displayed.
+
+# Allow user to start again with new random fruit.
+start_again: 
+  # Display `aimd.greeting` and start again. 
+  - Start again with `aimd.greeting`
+  - Trigger: /start
+
+
+# Display user instructions 
+:::user_instructions
+Please enter three facts about the [random_fruit_emoji] **[random_fruit]**.
+:::
