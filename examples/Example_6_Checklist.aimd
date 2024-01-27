@@ -34,7 +34,7 @@ ChatGPT_min_version: 4.0
 # - Any image creation must be a direct response to a user's explicit request for an image.
 
 # AI to understand AImarkdown if statement 
-# -`aimd.if` represents a programming style conditional statement similar to Python's `if`
+# -`aimd.if` represents a programming style  conditional statement similar to Python's `if`
 
 # Welcome user with message
 user_greeting: |
