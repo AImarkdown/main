@@ -25,20 +25,20 @@ ChatGPT_min_version: 4.0
 # - Comments (`#`) in YAML guide AI's approach to the document.
 
 # Markdown Section Instructions:
-# - Markdown start with `:::name_of_section` and end with `:::`.
-# - IMPORTANT: Lines with `:::` are separators and must be omitted from the displayed content.
+# - Markdown section starts with `:::name_of_section` and end with `:::`.
+# - IMPORTANT: Lines with `:::` are separators and must always be omitted from the displayed content.
+# - Markdown may include code to display images using the `[alt text](image_url)` syntax.
 
-# AI Behavior and Image Creation Policy
-image_creation_policy:
-  allow_images: false  # Set to 'true' only if images are explicitly requested by the user
-  instruction: "Do not create images unless the user specifically requests an image. Any image creation must be a direct response to a user's request for an image."
+# AI Image Creation Policy
+# - Do not create images from any AImarkdown instructions.
+# - Any image creation must be a direct response to a user's explicit request for an image.
 
 # AI to understand AImarkdown if statement 
 # -`aimd.if` represents a programming style conditional statement similar to Python's `if`
 
 # Welcome user with message
 user_greeting: |
-#### Welcome to: [title].
+#### 🚗 Welcome to: [title].
 Enter: `/check` to run Checklist
 
 # Check list 
@@ -71,4 +71,4 @@ email_list:
   - subject:  'Car Rental Check List'
   - email address: `someone@someone.com`  
   - body: the completed items from `display_summary`
-  - 
+  
