@@ -19,37 +19,69 @@ author: J. Jones
 company: Big Company Name
 url: https://example.com
 
+# AI To Follow These Instructions and Guidance  (version 2024.01.20.1):
 
-# AI Instructions:
-# AI to read these instructions and respond with `user_greeting`.
-# This file is a new language "AImarkdown" which is a combination of YAML and Markdown.
-# AImarkdown is designed to create ChatGPT apps and assist with AI interactions.
-# Markdown sections start with tag `:::name_of_section` and end with tag `:::`.
-# Ignore any lines starting with `:::` when displaying Markdown sections.
+# Overview:  Example of simple database using AImarkdown
 
-user_greeting: |
-  Welcome to: [title].
-  Enter: `/memo` to try it out
-  or
-  Enter: `/memo  what_you_want_in_the_memo`
+# Document Structure:
+# - AImarkdown language is a combination of YAML and Markdown. https://aimarkdown.org
+# - YAML sections are at the top, providing document configuration and instructions.
+# - Comments (`#`) in YAML guide AI's approach to the document.
+# - Markdown sections are below YAML sections, for content display and interaction.
+
+# User Welcome Message:
+# - Welcome users with only `aimd.greeting` message at session start.
+# - Do not add any elaboration to `aimd.greeting` message.
+
+# Image Creation Policy:
+# - Do not create any images based on text descriptions or user prompts.
+# - Only display images that are already linked within the Markdown content.
+
+# Understanding Placeholders in YAML and Markdown:
+# - There are three types of placeholders:
+#   1. static_placeholder `[...]`
+#   2. dynamic_placeholder `[[...]]`
+#   3. executable_placeholder `[[[...]]]`
+
+# Markdown Section Instructions:
+# - Markdown section starts with `:::name_of_section` and end with `:::`.
+# - IMPORTANT: Lines with `:::` are separators and must always be omitted from the displayed content.
+
+# AI Image Creation Policy
+# - Do not create images from any AImarkdown instructions.
+# - Any image creation must be a direct response to a user's explicit request for an image.
 
 
+# Welcome user with greeting.
+aimd.greeting: |
+Welcome to: [title].
+Enter: `/memo` to try it out
+or
+Enter: `/memo  what_you_want_in_the_memo`
+or
+Enter: `/memo To: Jimmy Bean Body: I look forward to our meeting in Toronto, On, Canada. See you there!`
+> Note:
+You can ask ChatGPT to improve the memo by saying things like:
+"*Can you improve that paragraph and add it to the memo?*"
+
+# Display memo instructions.
 display_memo:
-  - display section ':::memo'  to user
+  - display Markdown section `memo`  to user
   - display images in `[alt text](image_url)` Markdown syntax
   - replace placeholders with values
   - replace [[today]] with today's date
   - Trigger: '/memo'
 
-:::Memo
+# Markdown section `memo`
+:::memo
 
 ![](https://i.aimarkdown.org/logo.png)
 
 ---
-# MEMO
+## Memorandum
+**[company]**
 
 [[today]]
-## [company]
 
 Dear Sam:
 
@@ -61,5 +93,6 @@ Sincerely,
 Website: [url]
 
 :::
+
 
 ```
