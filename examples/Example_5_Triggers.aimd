@@ -69,7 +69,7 @@ prohibited_words: hell, darn, poop
 warning_to_user:
   - prohibited_word: The prohibited word or words the user entered. 
   # Display a message to user and stop. [prohibited_word]
-  - message_to_user: **Ooops!** You entered a prohibited  word. **[prohibited_word]**. You can start again with `/start`
+  - message_to_user: **Ooops!** You entered a prohibited word. **[prohibited_word]**. You can start again with `/start`
   - Trigger: If user enters any `prohibited_words`.
 
 # Welcome user with message
