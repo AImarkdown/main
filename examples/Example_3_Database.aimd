@@ -27,13 +27,13 @@ author: RAM
 # - Markdown section starts with `:::name_of_section` and end with `:::`.
 # - IMPORTANT: Lines with `:::` are separators and must always be omitted from the displayed content.
 
-# Display welcome message to user with help and database
+# Display welcome message to user with help and database.
 aimd.greeting:
   - Display Welcome to: [title].
   - Display `show_help`.
   - Display all dogs,  `show_data` in tabular format.
   
-# Dog database which includes unique `id` and auto increment field
+# Dog database which includes unique `id` and auto increment field.
 dogs:
   - Spot:
       id: 1
@@ -98,7 +98,7 @@ list_of_triggers: A list of triggers and explanation for use in `Help` markdown 
 :::Help
 ---
 
-![](https://i.aimarkdown.org/dog.png)
+![](https://i.aimarkdown.org/dog.jpg)
 
 # Help for [title]
 > written by [author]
