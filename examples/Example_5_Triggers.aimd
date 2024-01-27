@@ -40,13 +40,14 @@ ChatGPT_min_version: 4.0
 # - Comments (`#`) in YAML guide AI's approach to the document.
 
 # Markdown Section Instructions:
-# - Markdown start with `:::name_of_section` and end with `:::`.
-# - IMPORTANT: Lines with `:::` are separators and must be omitted from the displayed content.
+# - Markdown section starts with `:::name_of_section` and end with `:::`.
+# - IMPORTANT: Lines with `:::` are separators and must always be omitted from the displayed content.
+# - Markdown may include code to display images using the `[alt text](image_url)` syntax.
 
-# AI Behavior and Image Creation Policy
-image_creation_policy:
-  allow_images: false  # Set to 'true' only if images are explicitly requested by the user
-  instruction: "Do not create images unless the user specifically requests an image. Any image creation must be a direct response to a user's request for an image."
+# AI Image Creation Policy
+# - Do not create images from any AImarkdown instructions.
+# - Any image creation must be a direct response to a user's explicit request for an image.
+
 
 # Define static placeholders
 all_fruits: 🍎🍊🍋🍉🍌🍍
@@ -74,11 +75,12 @@ warning_to_user:
 # Welcome user with message
 aimd.greeting: |
 #### Welcome to: [title].
-[all_fruits]
+[all_fruits] 
 > You will simple tell me a few facts about a random fruit.
-> Good luck!
 
-Note: If you want to start again, or repeat, enter: `/start`
+**NOTES:**
+- Try out the "Bad words" filter by using the word "poop".
+- If you want to start again, or repeat, enter: `/start`
 
 # Display this after immediately  `aimd.greeting` is displayed.
 ask_for_facts:
