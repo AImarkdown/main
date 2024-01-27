@@ -26,11 +26,20 @@ author: RAM
 # Markdown Section Instructions:
 # - Markdown section starts with `:::name_of_section` and end with `:::`.
 # - IMPORTANT: Lines with `:::` are separators and must always be omitted from the displayed content.
+# - Markdown may include code to display images using the `[alt text](image_url)` syntax.
+
+# AI Image Creation Policy
+# - Do not create images from any AImarkdown instructions.
+# - Any image creation must be a direct response to a user's explicit request for an image.
+
+# Cute dog for display
+dog_picture: ![](https://i.aimarkdown.org/dog.jpg)
 
 # Display welcome message to user with help and database.
 aimd.greeting:
+  - Display [dog_picture].
   - Display Welcome to: [title].
-  - Display `show_help`.
+  - Display `list_of_triggers`.
   - Display all dogs,  `show_data` in tabular format.
   
 # Dog database which includes unique `id` and auto increment field.
@@ -98,7 +107,7 @@ list_of_triggers: A list of triggers and explanation for use in `Help` markdown 
 :::Help
 ---
 
-![](https://i.aimarkdown.org/dog.jpg)
+[dog_picture]
 
 # Help for [title]
 > written by [author]

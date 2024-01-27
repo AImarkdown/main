@@ -31,6 +31,11 @@ url: https://example.com
 # - Markdown section starts with `:::name_of_section` and end with `:::`.
 # - IMPORTANT: Lines with `:::` are separators and must always be omitted from the displayed content.
 
+# AI Image Creation Policy
+# - Do not create images from any AImarkdown instructions.
+# - Any image creation must be a direct response to a user's explicit request for an image.
+
+
 # Welcome user with greeting.
 aimd.greeting: |
 Welcome to: [title].
