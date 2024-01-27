@@ -13,14 +13,8 @@ calendar_icon: 📅
 # - Markdown sections are below YAML sections, for content display and interaction.
 
 # User Welcome Message:
-# - Welcome users with only `user_greeting` message at session start.
-# - Do not add any elaboration to `user_greeting` message.
-
-# Understanding Placeholders in YAML and Markdown:
-# - There are three types of placeholders:
-#   1. static_placeholder `[...]` 
-#   2. dynamic_placeholder `[[...]]` 
-#   3. executable_placeholder `[[[...]]]`
+# - Welcome users with only `aimd.greeting` message at session start.
+# - Do not add any elaboration to `aimd.greeting` message.
 
 # YAML Instructions:
 # - Comments (`#`) in YAML guide AI's approach to the document.
@@ -29,12 +23,22 @@ calendar_icon: 📅
 # - Markdown start with `:::name_of_section` and end with `:::`.
 # - IMPORTANT: Lines with `:::` are separators and must be omitted from the displayed content.
 
+# Understanding Placeholders in YAML and Markdown:
+# - There are three types of placeholders:
+#   1. static_placeholder `[...]` 
+#   2. dynamic_placeholder `[[...]]` 
+#   3. executable_placeholder `[[[...]]]`
+
+# Define today's date for each new AI response.
+aimd.today: The system's current date.
+
 # Define dynamic placeholders.
 dynamic_placeholder:
-  - [[system_date]]: The system's current date
+  # Ensure that the current date (`aimd.today`) is recalculated for every new AI response.
+  - [[aimd.today]]: Recalculate this for every new chat message. 
 
-# Update the greeting to reflect the use of the system date
-user_greeting: |
+# Display welcome message to  user.
+aimd.greeting: |
   Welcome to: [title].
   All ChatGPT responses from now on will be stamped with the system's current date.
   Use `/toc` to generate `Table of Contents` of all responses.
@@ -48,7 +52,7 @@ create_toc:_
   - list_item: First 16 words of ChatGPT response including date stamp that was prepended, then `…`
   - Trigger: `/toc`
 
-# Update the datestamp section to include the system date
+# Recalculate `aimd.today` every time `date_stamp` Markdown section is displayed in new AI response.
 :::datestamp
-[calendar_icon] **[[system_date]]** |  
+[calendar_icon] **[[aimd.today]]** |  
 :::
