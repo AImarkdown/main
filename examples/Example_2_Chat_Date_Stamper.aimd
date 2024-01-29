@@ -2,10 +2,9 @@ title: SimplerTasks | Chat DateStamper
 version: 0.6
 calendar_icon: 📅
 
-
 # AI To Follow These Instructions and Guidance  (version 2024.01.20.1):
 
-# Overview:  Example of Date Stamping every response using AImarkdown 
+# Overview:  Utilize a dynamic date retrieval system that updates the date stamp in real time.
 
 # Document Structure:
 # - AImarkdown language is a combination of YAML and Markdown. https://aimarkdown.org
@@ -29,30 +28,30 @@ calendar_icon: 📅
 #   2. dynamic_placeholder `[[...]]` 
 #   3. executable_placeholder `[[[...]]]`
 
-# Define today's date for each new AI response.
-aimd.today: The system's current date.
-
 # Define dynamic placeholders.
+# Ensure that the current date (`aimd.todays_date`) is recalculated for every new AI response.
+# Ensure the `today_date` placeholder updates at midnight each day, to reflect the new date.
 dynamic_placeholder:
-  # Ensure that the current date (`aimd.today`) is recalculated for every new AI response.
-  - [[aimd.today]]: Recalculate this for every new chat message. 
-
+  - aimd.todays_date: The system's current date for each new AI response.
+  
 # Display welcome message to  user.
 aimd.greeting: |
   Welcome to: [title].
   All ChatGPT responses from now on will be stamped with the system's current date.
-  Use `/toc` to generate `Table of Contents` of all responses.
+  Use `/toc` to generate `Table of Contents` of all responses with date stamp.
   
 # - Implement a date stamp that captures today's date to each ChatGPT response.
 datestamp_behavior:
-  - Prefix every response with `datestamp` Markdown, then add ChatGPT response on the same line.
+  - Use the dynamic placeholder `aimd.todays_date` at the beginning of each response.
+  - Prefix every response as shown in `datestamp` Markdown, then add ChatGPT response on the same line.
 
 # Create table of contents as a list of responses
 create_toc:_
+# Display a `list_item` of all chat messages with date stamp, then with brief summary of chat.
   - list_item: First 16 words of ChatGPT response including date stamp that was prepended, then `…`
   - Trigger: `/toc`
 
-# Recalculate `aimd.today` every time `date_stamp` Markdown section is displayed in new AI response.
+# Recalculate `aimd.todays_date` every time `date_stamp` Markdown section is displayed in new AI response.
 :::datestamp
-[calendar_icon] **[[aimd.today]]** |  
+[calendar_icon] **[[aimd.todays_date]]** |  
 :::
