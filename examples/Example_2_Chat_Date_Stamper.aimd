@@ -21,7 +21,7 @@ author: Rob McCormack
 # - IMPORTANT: Lines with `:::` are separators and must always be omitted from the displayed content.
 
 # Welcome user with greeting.
-# AI to explain date stamp to user 
+# AI to explain very briefly  ChatGPT Date Stamper to user including table of contents feature
 aimd.greeting: |
 Welcome to: [title].
 
@@ -34,9 +34,9 @@ display_response:
 
 # Create table of contents as a list of responses
 create_toc:_
-# Display a `list_item` of all chat messages with date stamp, then with brief summary of chat.
+# Display a `list_item` of all chat messages with date stamp, then with brief summary of response.
   - list_item: First 16 words of ChatGPT response including date stamp that was prepended, then `…`
-  - Trigger: `/toc`
+  - trigger: `/toc`
 
 # Markdown section `date_stamped_response`
 :::date_stamped_response 
