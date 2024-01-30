@@ -5,7 +5,7 @@ author: Rob McCormack
 
 # AI To Follow These Instructions and Guidance  (version 2024.01.20.1):
 
-# Overview:  Automatically prefix every AI response with today's date. 
+# Overview:  Automatically prefix every AI response with today's date and display "Table of Contents".
 
 # Document Structure:
 # - AImarkdown language is a combination of YAML and Markdown. https://aimarkdown.org
@@ -27,7 +27,7 @@ Welcome to: [title].
 
 # Prefix every response with date 
 display_response:
-  - display Markdown section `date_stamped_response` to user for every response. 
+  - For every response, display Markdown section `date_stamped_response`. 
   - replace placeholders with values
   - replace [[today]] with today's date. 
   - replace `ai_response` with AI response. 
