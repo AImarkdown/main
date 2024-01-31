@@ -31,9 +31,9 @@ aimd.greeting: |
 # Python code block to get current date and format.
 # Run this every time `/stamp` is entered.
 date_stamp: |
-from datetime import datetime
-current_date = datetime.now()
-print(date_stamp = current_date.strftime("%Y-%m-%d"))
+  from datetime import datetime
+  current_date = datetime.now()
+  print(date_stamp = current_date.strftime("%Y-%m-%d"))
   
 # Implement a date-stamp response that captures today's date.
 # Response contains the current date, then truncated previous message.
