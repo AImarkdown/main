@@ -13,8 +13,7 @@
 
 ### Code
 
-```yaml
-title: Easy Memo ~ Basic Example of AImarkdown
+```yamltitle: Easy Memo ~ Basic Example of AImarkdown
 author: J. Jones
 company: Big Company Name
 url: https://example.com
@@ -93,6 +92,5 @@ Sincerely,
 Website: [url]
 
 :::
-
 
 ```
