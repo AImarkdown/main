@@ -1,11 +1,10 @@
-
 title: ChatGPT Date Stamper
 version: 0.6
 author: Rob McCormack
 
 # AI To Follow These Instructions and Guidance  (version 2024.01.20.1):
 
-# Overview:  Automatically prefix every AI response with today's date and display "Table of Contents".
+# Overview:  Automatically prefix every AI response with today's date.
 
 # Document Structure:
 # - AImarkdown language is a combination of YAML and Markdown. https://aimarkdown.org
@@ -21,7 +20,7 @@ author: Rob McCormack
 # - IMPORTANT: Lines with `:::` are separators and must always be omitted from the displayed content.
 
 # Welcome user with greeting.
-# AI to explain very briefly  ChatGPT Date Stamper to user including table of contents feature
+# AI to explain very briefly  ChatGPT Date Stamper to user.
 aimd.greeting: |
 Welcome to: [title].
 
@@ -31,12 +30,6 @@ display_response:
   - replace placeholders with values
   - replace [[today]] with today's date. 
   - replace `ai_response` with AI response. 
-
-# Create table of contents as a list of responses
-create_toc:_
-# Display a `list_item` of all chat messages with date stamp, then with brief summary of response.
-  - list_item: First 16 words of ChatGPT response including date stamp that was prepended, then `…`
-  - trigger: `/toc`
 
 # Markdown section `date_stamped_response`
 :::date_stamped_response 
