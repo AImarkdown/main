@@ -1,6 +1,6 @@
 title: Easy Memo ~ Basic Example of AImarkdown
 author: J. Jones
-company: Big Company
+company: Big Company Name
 company_url: https://example.com
 
 # AI To Follow These Instructions and Guidance  (version 2024.01.20.1):
@@ -13,6 +13,10 @@ company_url: https://example.com
 # - Comments (`#`) in YAML guide AI's approach to the document.
 # - Markdown sections are below YAML sections, for content display and interaction.
 
+# User Welcome Message:
+# - Welcome users with only `aimd.greeting` message at session start.
+# - Do not add any elaboration to `aimd.greeting` message.
+
 # Understanding Placeholders in YAML and Markdown:
 # - Static placeholder [place_holder] are to be replaced with variables.
 
@@ -24,21 +28,17 @@ company_url: https://example.com
 # - Do not create images from any AImarkdown instructions.
 # - Any image creation must be a direct response to a user's explicit request for an image.
 
-# Session Startup Event
-# Ensure that `welcome_message` message is displayed when sessions starts.
-# Display `welcome_message` message without additional elaboration.
-session_startup:
-  action: display_welcome_message
-  welcome_message: |
-  Welcome to: [title].
-  Enter: `/memo` to try it out
-  or, you can enter more details
-  Enter: `/memo Jan. 15, 2024 I look forward to our meeting in Toronto, On, Canada. See you there!`
-  > Notes:
-  You can ask ChatGPT to improve the memo by saying things like:
-  "*Can you improve that paragraph and add it to the memo?*"
-  or, just use natural language like:
-  "*Write the memo dated Feb. 1, 2024, to Mr. Bill Smith, It was very nice to meet you Bill in Miami last week. I hope we can chat on the phone soon.*"
+# Welcome user with greeting.
+aimd.greeting: |
+Welcome to: [title].
+Enter: `/memo` to try it out
+or, you can enter more details
+Enter: `/memo Jan. 15, 2024 I look forward to our meeting in Toronto, On, Canada. See you there!`
+> Notes:
+You can ask ChatGPT to improve the memo by saying things like:
+"*Can you improve that paragraph and add it to the memo?*"
+or, just use natural language like:
+"*Write the memo dated Feb. 1, 2024, to Mr. Bill Smith, It was very nice to meet you Bill in Miami last week. I hope we can chat on the phone soon.*"
 
 # Prompt user for date of memo
 memo_date: 
@@ -58,7 +58,7 @@ display_memo:
 # Markdown section `memo`
 :::memo
 
-![](https://i.aimarkdown.org/easy-memo-logo.jpg)
+![](https://i.aimarkdown.org/logo.png)
 
 ---
 ## Memorandum
