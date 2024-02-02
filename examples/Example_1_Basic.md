@@ -13,14 +13,15 @@
 
 ### Code
 
-```yamltitle: Easy Memo ~ Basic Example of AImarkdown
+```yaml
+title: Easy Memo ~ Basic Example of AImarkdown
 author: J. Jones
 company: Big Company Name
-url: https://example.com
+company_url: https://example.com
 
 # AI To Follow These Instructions and Guidance  (version 2024.01.20.1):
 
-# Overview:  Example of simple database using AImarkdown
+# Overview:  Example of writing a Memo with AImarkdown
 
 # Document Structure:
 # - AImarkdown language is a combination of YAML and Markdown. https://aimarkdown.org
@@ -32,15 +33,8 @@ url: https://example.com
 # - Welcome users with only `aimd.greeting` message at session start.
 # - Do not add any elaboration to `aimd.greeting` message.
 
-# Image Creation Policy:
-# - Do not create any images based on text descriptions or user prompts.
-# - Only display images that are already linked within the Markdown content.
-
 # Understanding Placeholders in YAML and Markdown:
-# - There are three types of placeholders:
-#   1. static_placeholder `[...]`
-#   2. dynamic_placeholder `[[...]]`
-#   3. executable_placeholder `[[[...]]]`
+# - Static placeholder [place_holder] are to be replaced with variables.
 
 # Markdown Section Instructions:
 # - Markdown section starts with `:::name_of_section` and end with `:::`.
@@ -50,25 +44,31 @@ url: https://example.com
 # - Do not create images from any AImarkdown instructions.
 # - Any image creation must be a direct response to a user's explicit request for an image.
 
-
 # Welcome user with greeting.
 aimd.greeting: |
 Welcome to: [title].
 Enter: `/memo` to try it out
-or
-Enter: `/memo  what_you_want_in_the_memo`
-or
-Enter: `/memo To: Jimmy Bean Body: I look forward to our meeting in Toronto, On, Canada. See you there!`
-> Note:
+or, you can enter more details
+Enter: `/memo Jan. 15, 2024 I look forward to our meeting in Toronto, On, Canada. See you there!`
+> Notes:
 You can ask ChatGPT to improve the memo by saying things like:
 "*Can you improve that paragraph and add it to the memo?*"
+or, just use natural language like:
+"*Write the memo dated Feb. 1, 2024, to Mr. Bill Smith, It was very nice to meet you Bill in Miami last week. I hope we can chat on the phone soon.*"
+
+# Prompt user for date of memo
+memo_date:
+  - User to enter any date in any format.
+  # If no date specified by user, use default value
+  - default_date: December 8, 2023
 
 # Display memo instructions.
 display_memo:
-  - display Markdown section `memo`  to user
-  - display images in `[alt text](image_url)` Markdown syntax
-  - replace placeholders with values
-  - replace [[today]] with today's date
+  - Ask user for date of memo - `memo_date`.
+  - Display images in `[alt text](image_url)` Markdown syntax.
+  - Replace placeholders with values.
+  - Replace [memo_date] date from user or uses `default_date`.
+  - Display Markdown section `memo` to user.
   - Trigger: '/memo'
 
 # Markdown section `memo`
@@ -80,17 +80,18 @@ display_memo:
 ## Memorandum
 **[company]**
 
-[[today]]
+[memo_date]
 
 Dear Sam:
 
-It was nice to meet you on [[today]].
+It was nice to meet you on last week at the MIT meeting.
 
 Sincerely,
  [author]
 
-Website: [url]
+Website: [company_url]
 
 :::
+
 
 ```

@@ -33,7 +33,7 @@ aimd.greeting: |
 Welcome to: [title].
 Enter: `/memo` to try it out
 or, you can enter more details
-Enter: /memo` Jan. 15, 2024 I look forward to our meeting in Toronto, On, Canada. See you there!`
+Enter: `/memo Jan. 15, 2024 I look forward to our meeting in Toronto, On, Canada. See you there!`
 > Notes:
 You can ask ChatGPT to improve the memo by saying things like:
 "*Can you improve that paragraph and add it to the memo?*"
