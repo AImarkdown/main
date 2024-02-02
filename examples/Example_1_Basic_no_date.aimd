@@ -37,6 +37,8 @@ Enter: /memo` Jan. 15, 2024 I look forward to our meeting in Toronto, On, Canada
 > Note:
 You can ask ChatGPT to improve the memo by saying things like:
 "*Can you improve that paragraph and add it to the memo?*"
+or, just use natural language like:
+"*Write the memo dated Feb. 1, 2024, to Mr. Bill Smith, It was very nice to meet you Bill in Miami last week. I hope we can chat on the phone soon.*"
 
 # Prompt user for date of memo
 memo_date: 
