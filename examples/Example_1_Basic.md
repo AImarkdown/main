@@ -2,9 +2,7 @@
 
 ### Screenshot
 
-![](images/Example_1_Basic.png)
-
----
+## ![](https://i.aimarkdown.org/easy-memo-screenshot.jpg)
 
 ### AImarkdown Code
 
