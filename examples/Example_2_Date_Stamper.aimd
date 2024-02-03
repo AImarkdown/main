@@ -1,10 +1,10 @@
-title: ChatGPT Date Stamper
+title: 📅 Date Stamper
 version: 0.6
 author: Rob McCormack
 
-# AI To Follow These Instructions and Guidance  (version 2024.01.20.1):
+# AI To Follow These Instructions and Guidance  (version 2024.02.03):
 
-# Overview:  Automatically prefix every AI response with today's date.
+# Overview:  Add a date stamp and optional comment below responses.
 
 # Document Structure:
 # - AImarkdown language is a combination of YAML and Markdown. https://aimarkdown.org
