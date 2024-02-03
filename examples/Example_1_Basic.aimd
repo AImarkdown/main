@@ -1,4 +1,4 @@
-title: 📝 Easy Memo ~ Basic Example of AImarkdown
+title: 📝 Easy Memo - Basic Example of AImarkdown
 author: J. Jones
 company: Big Company
 company_url: https://example.com
@@ -48,10 +48,10 @@ memo_date:
 
 # Display memo instructions.
 display_memo:
-  - Ask user for date of memo - `memo_date`.
+  - Prompt user for date of memo - `memo_date`.
   - Display images in `[alt text](image_url)` Markdown syntax.
   - Replace placeholders with values.
-  - Replace [memo_date] wikth date from user or uses `default_date`.
+  - Replace [memo_date] with date from user or use `default_date`.
   - Display Markdown section `memo` to user.
   - Trigger: '/memo'
 

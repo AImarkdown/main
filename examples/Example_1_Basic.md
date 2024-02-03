@@ -1,34 +1,20 @@
-Welcome to 📝 Easy Memo ~ Basic Example of AImarkdown.
-
-- Simply type `/memo` to create a new memo.
-- For a personalized memo, use `/memo [date] [message]`. For example:  
-   `/memo Jan. 15, 2024 I look forward to our meeting in Toronto, On, Canada. See you there!`
-  > **Pro Tips:**
-  >
-  > - Enhance your memo by asking for specific improvements. For example, ask to refine a paragraph by saying, "_Can you improve that paragraph and add it to the memo?_"
-
-## Simple Memo Example
-
-> Description: Start of a basic `Easy Memo` app
-
-- type `/memo` to write a Memo
-
-- See actual ChatGPT session at:
-  https://chat.openai.com/share/9468f7af-1880-44d5-80f9-eaf4176becee
+## 📝 Easy Memo Example
 
 ### Screenshot
 
 ![](images/Example_1_Basic.png)
 
-### Code
+---
+
+### AImarkdown Code
 
 ```yaml
-title: Easy Memo ~ Basic Example of AImarkdown
+title: 📝 Easy Memo - Basic Example of AImarkdown
 author: J. Jones
 company: Big Company
 company_url: https://example.com
 
-# AI To Follow These Instructions and Guidance  (version 2024.01.20.1):
+# AI To Follow These Instructions and Guidance  (version 2024.02.03)
 
 # Overview:  Example of writing a Memo with AImarkdown
 
@@ -68,15 +54,15 @@ session_startup:
 # Prompt user for date of memo
 memo_date:
   - User to enter any date in any format.
-  # If no date specified by user, use default value
+  # If no date specified by user, use default value.
   - default_date: December 8, 2023
 
 # Display memo instructions.
 display_memo:
-  - Ask user for date of memo - `memo_date`.
+  - Prompt user for date of memo - `memo_date`.
   - Display images in `[alt text](image_url)` Markdown syntax.
   - Replace placeholders with values.
-  - Replace [memo_date] date from user or uses `default_date`.
+  - Replace [memo_date] with date from user or use `default_date`.
   - Display Markdown section `memo` to user.
   - Trigger: '/memo'
 
@@ -86,20 +72,16 @@ display_memo:
 ![](https://i.aimarkdown.org/easy-memo-logo.jpg)
 
 ---
-## Memorandum
+## Memo
 **[company]**
 
 [memo_date]
-
 Dear Sam:
-
 It was nice to meet you on last week at the MIT meeting.
-
 Sincerely,
  [author]
-
-Website: [company_url]
-
+ Website: [company_url]
 :::
+
 
 ```
