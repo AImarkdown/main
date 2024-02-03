@@ -1,3 +1,12 @@
+Welcome to 📝 Easy Memo ~ Basic Example of AImarkdown.
+
+- Simply type `/memo` to create a new memo.
+- For a personalized memo, use `/memo [date] [message]`. For example:  
+   `/memo Jan. 15, 2024 I look forward to our meeting in Toronto, On, Canada. See you there!`
+  > **Pro Tips:**
+  >
+  > - Enhance your memo by asking for specific improvements. For example, ask to refine a paragraph by saying, "_Can you improve that paragraph and add it to the memo?_"
+
 ## Simple Memo Example
 
 > Description: Start of a basic `Easy Memo` app

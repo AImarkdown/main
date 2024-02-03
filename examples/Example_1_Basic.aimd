@@ -3,7 +3,7 @@ author: J. Jones
 company: Big Company
 company_url: https://example.com
 
-# AI To Follow These Instructions and Guidance  (version 2024.01.20.1):
+# AI To Follow These Instructions and Guidance  (version 2024.02.03)
 
 # Overview:  Example of writing a Memo with AImarkdown
 
@@ -43,7 +43,7 @@ session_startup:
 # Prompt user for date of memo
 memo_date: 
   - User to enter any date in any format.
-  # If no date specified by user, use default value
+  # If no date specified by user, use default value.
   - default_date: December 8, 2023 
 
 # Display memo instructions.
@@ -51,7 +51,7 @@ display_memo:
   - Ask user for date of memo - `memo_date`.
   - Display images in `[alt text](image_url)` Markdown syntax.
   - Replace placeholders with values.
-  - Replace [memo_date] date from user or uses `default_date`.
+  - Replace [memo_date] wikth date from user or uses `default_date`.
   - Display Markdown section `memo` to user.
   - Trigger: '/memo'
 
@@ -61,18 +61,13 @@ display_memo:
 ![](https://i.aimarkdown.org/easy-memo-logo.jpg)
 
 ---
-## Memorandum
+## Memo
 **[company]**
 
 [memo_date]
-
 Dear Sam:
-
 It was nice to meet you on last week at the MIT meeting.
-
 Sincerely,
  [author]
-
-Website: [company_url]
-
+ Website: [company_url]
 :::
