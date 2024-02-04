@@ -1,38 +1,25 @@
-# AImarkdown
+![](https://github.com/AImarkdown/main/blob/main/logos/favicon-32x32.png)
+![](https://aimarkdown.org/images/aimd-logo-160.png)
 
-Welcome to AImarkdown, an innovative language imagined by Rob McCormack in 2023, designed for both programmers and non-programmers. This open-source project simplifies the creation and interaction with AI-driven apps.
+![](https://aimarkdown.org/logos/built-with-aimarkdown.png)
 
-## Features
+![](https://aimarkdown.org/images/badges/chatGPT-74aa9c.svg)
+![](https://aimarkdown.org/images/powered-by-openai-badge-outlined-on-light.png)
 
-- **User-Friendly**: Utilizes human-friendly plain text for all interactions.
-- **Cross-Platform**: Create apps on mobile or desktop and run them anywhere.
-- **AI Instruction**: Structured, flexible, and extendable for instructing AI.
-- **Integrated Database**: Lightweight yet full-featured for data management.
-- **Rich Formatting**: Displays beautifully formatted AI responses, including images.
-- **Easy Sharing**: Share apps via email, text, or ChatGPT session links.
-- **Error Tolerance**: Instructions can contain typos; AI detects and fixes errors.
-- **Language Support**: Execute Python and Javascript (optional).
-- **Open Source**: Free to use and modify under the MIT License.
+_Developing AI apps, Prompt Engineering, and customizing ChatGPT interactions has never been easier_
 
-## Getting Started
+## About
 
-1. **Installation**: Download AImarkdown from the [official repository](#).
-2. **Documentation**: Read our [comprehensive guide](#) for a quick start.
-3. **Examples**: Explore [sample projects](#) to see AImarkdown in action.
+AIMarkdown Language is a tool that combines the simplicity of Markdown, the structured data capability of YAML, and Python-like syntax for dynamic content. It's designed to be human-readable and easily understood by AI, bridging the gap between document creation and AI interaction. YAML is used for data structuring, AI instructions and AI guidance. Markdown handles user-facing content formatting. Developed by Rob McCormack in 2023.
 
-## Contributing
+## Links
 
-Join our vibrant community! Contributions, from code to documentation, are welcome. See our [contributing guidelines](#) for more information.
+# Github Main Repository
 
-## License
+- https://github.com/AImarkdown/main
 
-AImarkdown is released under the [MIT License](#). Free for personal and commercial use.
+# Website
 
-## Support
-
-Need help? Check out our [FAQs](#) or join our [community forum](#) for assistance.
+- https://aimarkdown.org
 
 ---
-
-Happy coding with AImarkdown!
-
