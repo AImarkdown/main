@@ -1,4 +1,4 @@
-![](https://github.com/AImarkdown/main/blob/main/logos/![Alt text](https://aimarkdown.org/images/aimd-logo-160.png)favicon-32x32.png)
+![](https://aimarkdown.org/favicon-32x32.png)
 ![](https://aimarkdown.org/images/aimd-logo-160.png)
 
 ![](https://aimarkdown.org/logos/built-with-aimarkdown.png)
