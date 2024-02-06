@@ -8,7 +8,7 @@
 
 ```yaml
 title: 📝 Easy Memo - Basic Example of AImarkdown
-author: Rob McCormack
+author: J. Jones
 company: Big Company
 company_url: https://example.com
 
@@ -74,12 +74,17 @@ display_memo:
 **[company]**
 
 [memo_date]
+
 Dear Sam:
+
 It was nice to meet you on last week at the MIT meeting.
 Sincerely,
+
  [author]
+
  Website: [company_url]
 :::
+
 
 
 ```

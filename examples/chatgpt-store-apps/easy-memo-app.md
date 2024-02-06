@@ -93,10 +93,14 @@ display_memo:
 **[company]**
 
 [memo_date]
+
 Dear Sam:
+
 It was nice to meet you on last week at the MIT meeting.
 Sincerely,
+
  [author]
+
  Website: [company_url]
 :::
 
