@@ -2,7 +2,7 @@
 
 ### Screenshot
 
-## ![](https://i.aimarkdown.org/easy-memo-screenshot.jpgxxx)
+## ![](https://i.aimarkdown.org/point-form-screenshot.jpg)
 
 ### AImarkdown Code
 
