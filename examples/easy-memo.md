@@ -8,7 +8,7 @@
 
 ```yaml
 title: 📝 Easy Memo - Basic Example of AImarkdown
-author: J. Jones
+author: Rob McCormack
 company: Big Company
 company_url: https://example.com
 
