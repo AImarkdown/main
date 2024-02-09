@@ -1,12 +1,15 @@
 # `datestamp` documentation
 
-> A ChatGPT Builder App using AImarkdown Langauge
+> A ChatGPT Builder App using AImarkdown Language
 
 ## Overview
 
 `datestamp` allows users to easily track conversations by adding the prefix `📅 YYYY-MM-DD` to each response.
 
-> Features:
+> See shared chat using `datestamp`:
+
+- https://chat.openai.com/share/1a221e51-6075-4451-a69f-7108bc9a66f2
+  > Features:
 
 1. You can search ChatGPT for any date
 2. Change time zone with natural language
