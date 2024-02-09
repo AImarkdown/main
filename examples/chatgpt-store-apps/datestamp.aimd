@@ -55,5 +55,5 @@ date_stamp:
 # Instructions to create a table of contents of all responses showing `datestamp` and truncated response.
 create_toc:
   - list-format: Use a numbered list to display each item. 
-  - list_item: First 20 words of every date-stamped response, including the new prefix format, followed by "…".
+  - list_item: Truncate the response to the first 20 words of every date-stamped response, including the new prefix format, followed by "…".
   - Trigger: /toc
