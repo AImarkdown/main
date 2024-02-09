@@ -8,8 +8,9 @@
 
 > See shared chat using `datestamp`:
 
-- https://chat.openai.com/share/1a221e51-6075-4451-a69f-7108bc9a66f2
-  > Features:
+- https://chat.openai.com/share/d143ee82-f830-4d22-ab6a-8bd54245e1be
+
+> Features:
 
 1. You can search ChatGPT for any date
 2. Change time zone with natural language
