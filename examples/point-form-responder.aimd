@@ -11,6 +11,7 @@ author: Rob McCormack
 # - AImarkdown is a blend of YAML (for configuration and instructions) and Markdown (for content).
 # - Avoid displaying YAML sections. Use them internally to guide response formation.
 # - Use Markdown for displaying user-facing content.
+# - More information at: https://aimarkdown.org
 
 # Session Startup Event
 # Ensure that `welcome_message` message is displayed when sessions starts.
