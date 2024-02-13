@@ -1,5 +1,11 @@
 ## 📍Point Form Responder
 
+> App compatibility:
+
+- [x] **ChatGPT 4**: copy and paste into Chat
+- [x] **ChatGPT Builder**: In `Configuration|Instructions` add "_AI to follow these instructions:_" then then copy and paste
+- [ ] ONLY **ChatGPT Builder** since API Actions required
+
 ### Screenshot
 
 ## ![](https://i.aimarkdown.org/point-form-screenshot.jpg)
