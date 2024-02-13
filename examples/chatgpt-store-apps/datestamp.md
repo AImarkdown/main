@@ -7,10 +7,16 @@
 `datestamp` allows users to easily track conversations by adding the prefix `📅 YYYY-MM-DD` to each response.
 
 > See shared chat using `datestamp`:
+>
+> - https://chat.openai.com/share/6c7aaa9b-696b-483d-a039-36237766612f
 
-- https://chat.openai.com/share/6c7aaa9b-696b-483d-a039-36237766612f
+> App compatibility:
+>
+> - [ ] **ChatGPT 4**: copy and paste into Chat
+> - [ ] **ChatGPT Builder**: In `Configuration|Instructions` add "_AI to follow these instructions:_" then then copy and paste
+> - [x] ONLY **ChatGPT Builder** since API Actions required
 
-> Features:
+### Features:
 
 1. You can search ChatGPT for any date
 2. Change time zone with natural language
@@ -20,7 +26,7 @@
 
 You will be asked at start of session to `allow` ChatGPT to call the `API` to get dates.
 
-> Use Cases
+### Use Cases
 
 - Sometimes you might return to the same ChatGPT conversation over the span of a few days. If you used `datestamp` - it is easy to sort out the dates of each response.
 - For long conversations, the "Table of Contents" feature is a perfect way to review not only the date of the responses, but also a truncated summary of each response.
