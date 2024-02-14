@@ -2,7 +2,7 @@
 
 <small>
 
-### AImarkdown Script compatibility:
+### AImarkdown Script Installation Notes
 
 1. ✅ **ChatGPT 4**: copy and paste into Chat
 2. ✅ **ChatGPT Builder**: In `Configuration|Instructions` add "_AI to follow these instructions:_", then copy and paste
