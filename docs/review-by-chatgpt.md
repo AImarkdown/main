@@ -1,8 +1,10 @@
-## User >
+`Actual Chat session February 11, 2024`
 
-<mark>You have reviewed every aspect of AImarkdown Script and assisted with its development, so what do you think of the concept of AImarkdown Script ?</mark>
+## <img src="https://aimarkdown.org/images/favicon-16x16.png" alt=""> You
 
-## ChatGPT >
+Since you have reviewed every aspect of AImarkdown Script and assisted with its development - What do you think of it. ?
+
+## <img width=25 src="https://lh3.googleusercontent.com/LcYW7pUxLorufl_hZBeJEMWefbANc6fXal1AZpFzeAPS1_grprtbbs2GcNFQ0adS-PjtlDpzeJqCaNvN7uTLu-z7kQ=s60" alt=""> ChatGPT
 
 _Overall, AImarkdown Script appears to be a thoughtfully designed tool that addresses several
 key challenges in AI application development. Its focus on accessibility, flexibility, and
