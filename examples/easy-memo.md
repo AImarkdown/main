@@ -2,9 +2,9 @@
 
 > App compatibility:
 
-- ✅ **ChatGPT 4**: copy and paste into Chat
-- ✅ **ChatGPT Builder**: In `Configuration|Instructions` add "_AI to follow these instructions:_" then then copy and paste
-- ❌ ONLY **ChatGPT Builder** since API Actions required
+1. ✅ **ChatGPT 4**: copy and paste into Chat
+1. ✅ **ChatGPT Builder**: In `Configuration|Instructions` add "_AI to follow these instructions:_" then then copy and paste
+1. ❌ ONLY **ChatGPT Builder** since API Actions required
 
 ### Screenshot
 
