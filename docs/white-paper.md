@@ -1,4 +1,4 @@
-# AImarkdown Script White Paper
+# White Paper: AImarkdown Script
 
 _February 14, 2024 by Rob McCormack_
 
