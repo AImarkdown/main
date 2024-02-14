@@ -1,8 +1,9 @@
-**User >**
-You h/pe reviewed every aspect of AImarkdown Script and assisted with the development,
-what do you think of the concept of AImarkdown Script ?
+> **User >**
+>
+> You have reviewed every aspect of AImarkdown Script and assisted with its development, so what do you think of the concept of AImarkdown Script?
 
-**ChatGPT >**
+> **ChatGPT >**
+
 The concept of AImarkdown Script, as described, represents a significant and innovative step
 in the evolution of user interactions with AI, particularly conversational AI platforms like
 ChatGPT. Here are several aspects that stand out:
