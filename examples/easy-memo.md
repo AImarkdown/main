@@ -2,11 +2,11 @@
 
 <small>
 
-### App compatibility:
+### AImarkdown Script compatibility:
 
-1. ✅ ChatGPT 4: copy and paste into Chat
-2. ✅ ChatGPT Builder: In `Configuration|Instructions` add "_AI to follow these instructions:_" then then copy and paste
-3. ❌ ChatGPT Builder only, since API Actions required
+1. ✅ **ChatGPT 4**: copy and paste into Chat
+2. ✅ **ChatGPT Builder**: In `Configuration|Instructions` add "_AI to follow these instructions:_", then copy and paste
+3. ❌ **ChatGPT Builder with API Actions**: set up of _Actions_ and knowledge of API calls required.
 
 </small>
 
