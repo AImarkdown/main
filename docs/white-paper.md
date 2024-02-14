@@ -1,44 +1,44 @@
-### AIMarkdown White Paper
+# AImarkdown Script White Paper
 
-> Jan 28, 2024, by Rob McCormack
+** February 14, 2024 by Rob McCormack**
 
-### Summary
+## Summary
 
-AImarkdown Language is an innovative new tool for ChatGPT and ChatGPT Builder, targeting mainly non-programmers. It democratizes the building of AI apps and interactions, akin to how spreadsheets revolutionized data manipulation. AImarkdown's goal is to achieve native ChatGPT support, significantly reducing coding requirements. For example, an existing AImarkdown example app of 50 lines, could reduced to 15 lines with native ChatGPT support.
+AImarkdown Script is an innovative scripting language specifically designed for enhancing interactions with ChatGPT and other conversational AI platforms. It empowers both programmers and non-programmers to customize AI responses, control conversation flow, and create dynamic interactions. AImarkdown Script's goal is to achieve native ChatGPT support, significantly reducing coding requirements and further democratizing the creation of AI applications.
 
-### Introduction
+## Introduction
 
-AImarkdown, combining and extending YAML and Markdown languages, is a streamlined tool for AI programming and content presentation. It is simple, accessible, and intuitive, catering to both non-programmers and programmers, with capabilities for embedding Python and JavaScript.
+AImarkdown Script blends the familiarity of YAML and Markdown with the flexibility of natural language instructions. Unlike traditional programming languages, comments within an AImarkdown Script actively guide and instruct the AI. This unique approach provides a user-friendly experience for script creators without the need for strict syntax. AImarkdown Script caters to users of all skill levels and offers capabilities for embedding Python and JavaScript.
 
-### Genesis
+## Genesis
 
-AImarkdown was born from recognizing a gap in ChatGPT 4 and ChatGPT Builder. While AI handles natural language effectively, a more structured and dependable approach was needed for creating apps, custom prompts, and behaviors. Interestingly, AImarkdown originated somewhat accidentally. While attempting to build iPhone apps with ChatGPT's assistance, Rob McCormack realized that with added structure and a customized chat-based interface, ChatGPT could be ideal for app development, without needing a classic programming language. AImarkdown-based apps can be developed rapidly and are error-tolerant, as AI manages error detection and automatic code correction. This marked a new paradigm in programming and app development.
+AImarkdown Script was born from recognizing the need for a more structured and dependable approach to creating AI interactions, custom prompts, and behaviors within ChatGPT and related platforms. Interestingly, AImarkdown Script originated somewhat accidentally. While attempting to build iPhone apps with ChatGPT's assistance, Rob McCormack realized that with added structure and a customized chat-based interface, ChatGPT could be ideal for app development. AImarkdown Script-based apps can be developed rapidly and are error-tolerant, as AI manages error detection and automatic code correction.
 
-Surprisingly, much of the motivation for AImarkdown development stemmed from ChatGPT itself. In the early stages, ChatGPT offered such positive feedback on AImarkdown, providing encouragement, insight, and suggestions for further development.
+Surprisingly, much of the motivation for AImarkdown Script development stemmed from ChatGPT itself. In the early stages, ChatGPT offered positive feedback, encouragement, insight, and suggestions for further development.
 
-### Innovation Process
+## Innovation Process
 
 1. Identify a problem.
 2. Conceptualize a solution using existing possibilities.
 3. Refine the concept into a practical solution.
 4. Transform it into a standard industry product.
 
-### AImarkdown Language Features
+## AImarkdown Script Features
 
 - Versatile app creation.
 - User-friendly for all skill levels.
-- Customizable ChatGPT prompts.
+- Customizable AI prompts and interactions.
 - Structured, flexible instructions.
 - Plain text format.
 - Simple database functionality.
 - Formatted AI responses with images.
 - Easy sharing.
 - Error tolerance.
-- Extreme portability - apps and data can be stored as plain text, even in an email message.
-- Free online JavaScript-based editor and validator at [validator.aimarkdown.org](https://validator.aimarkdown.org).
+- Extreme portability - scripts and data can be stored as plain text.
+- Free online JavaScript-based editor and validator at [validator.aimarkdown.org](http://validator.aimarkdown.org).
 - Integration with Python and JavaScript.
-- Free under the MIT License: [github.com/AImarkdown/main](https://github.com/AImarkdown/main)
+- Free under the MIT License: [github.com/AImarkdown/main](http://github.com/AImarkdown/main)
 
-### Conclusion
+## Conclusion
 
-AImarkdown represents a significant step toward making AI interactions more accessible, aligning with the trend of technological democratization and empowering a broader user base.
+AImarkdown Script represents a significant step toward making AI interactions more accessible and intuitive. It aligns with the trend of technological democratization, empowering a broader user base to shape their AI experiences without traditional programming barriers.
