@@ -12,7 +12,7 @@
 
 ### Screenshot
 
-## ![](https://i.aimarkdown.org/responsedial.jpg)
+## ![](https://i.aimarkdown.org/responsedial-400.jpg)
 
 ### AImarkdown Code
 
@@ -24,7 +24,7 @@ author: Rob McCormack
 # AI To Follow These Instructions and Guidance (version 2024.02.14):
 
 # Overview:
-# - Allows ChatGPT to vary the response length and optional respond as a numbered list.
+# - Allows  ChatGPT to vary the response length and optional respond as a numbered list.
 
 # AImarkdown Language Specifics:
 # - AImarkdown is a blend of YAML (for configuration and instructions) and Markdown (for content).
