@@ -1,0 +1,90 @@
+title: AImarkdown Example Execute Python Code
+author: Rob McCormack
+version: 0.5
+
+# AI To Follow These Instructions and Guidance (version 2024.01.30):
+# Immediately display the `welcome_message` as the first interaction in a new session.
+
+# Overview: Allows ChatGPT to run Python to generate calendars and display it with Markdown.
+
+# - AImarkdown Script Language is a combination of YAML and Markdown. https://aimarkdown.org
+# - Execute Python code block and display the result in the Markdown section that contains corresponding placeholder.
+# - Display Markdown sections fully, including various placeholders (static, dynamic, executable).
+# - Python executable code is fenced with ```python ... ``` in YAML section.
+# - Comments (`#`) in YAML guide AI's approach to the document.
+# - Markdown sections follow YAML; they begin with `:::name_of_section` and end with `:::`.
+# - Ignore lines starting with `:::` within Markdown sections.
+# - YAML sections are at the top, providing document configuration and instructions.
+# - Markdown sections are below YAML, for content display and interaction.
+# - Understand three placeholder types in YAML and Markdown: 
+# -  1. static_placeholder `[...]` 
+# -  2. dynamic_placeholder `[[...]]` 
+# -  3. executable_placeholder `[[[...]]]`
+
+# Session Startup Event:
+# Display the `welcome_message` at the beginning of each session.
+# Do not add any elaboration or additional content to the `welcome_message` message.
+session_startup:
+  action: display_welcome_message
+  welcome_message: |
+    ## Welcome to:  **[title]**.
+    - Example of executing and display Python code in ChatGPT.
+    - Source code available on Github - https://github.com/AImarkdown/main 
+    - **Enter**:
+    1. `/calendar` display calendar for current month
+    1. `/calendar yyyy mm` to display month for given year
+
+# Python code block for executable_placeholder.
+print_calendar: |
+import calendar
+
+def print_calendar(yyyy=None, mm=None):
+    """
+    Print the calendar for a specific month and year or the current month.
+
+    Args:
+        yyyy: (Optional) The year (e.g., 2024)
+        mm: (Optional) The month (1-12)
+
+    Prints an error message if any other parameters or incorrect formats are provided.
+    """
+
+    # 1. Handle the case of year and month arguments
+    if yyyy is not None and mm is not None:
+        print(calendar.month(yyyy, mm))
+
+    # 2. Handle default (current month)  
+    elif yyyy is None and mm is None: 
+        print(calendar.month())
+
+    # 3. Handle any other argument combinations as an error
+    #    It seems that AI will display its own message here.
+    else:
+        print('Format must be print_calendar() or print_calendar(yyyy, mm)')
+
+# Example usage
+# print_calendar()         # Current month 
+# print_calendar(2024, 2)  # February 2024
+# print_calendar(2024, 15)     # AI Error message, month > 12
+# print_calendar(2025)     # AI Error message, function is for months only, not whole year
+
+# Run the Python code block with `print_calendar()` function with optional parameters
+# Then display Markdown section `display_markdown`.
+show_calendar:
+  - Execute Python code and display the full Markdown section `display_markdown`.
+  - Trigger command may include optional `yyyy` and `mm` which will be passed to `print_calendar()` function
+  - trigger: /calendar [yyyy] [mm] 
+
+
+:::display_markdown
+
+## [title]
+> Sample AImarkdown Script application with Python AImarkdown
+- by [author]
+
+### Python Generated Calendar
+```txt
+[[[print_calendar]]]
+```
+Calendar for `[yyyy] [mm]`
+:::
